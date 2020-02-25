@@ -15,24 +15,25 @@ char readKeys() {
 }
 
 
-
+// Function that reads the pressed button values and stores them in a variable
 byte waitForRelease() {
-  byte a = B000000;
-  byte x = B000000;
-  while (1) {
-    x = 0;
-    for (int i = 0; i < 6; i++) {
-      if (digitalRead(pinMap[i]) == LOW) { //if button is GND then follow
+  byte a = B000000; //initial value
+  byte x = B000000; //initial value
+  while (1) {  //run in a loop
+    x = 0; //reset back to zero after every loop
+    for (int i = 0; i < 6; i++) { //read all charecter buttons in a sequence
+      if (digitalRead(pinMap[i]) == LOW) { //Button is pressed
+        //Enter 1 in the apropriate position for each charter button combination in the byte
         x = 1;
-        x <<= i;
-        a = a | x;
+        x <<= i; //bitshift left https://www.arduino.cc/reference/en/language/structure/bitwise-operators/bitshiftleft/
+        a = a | x; //Bitwise or https://www.arduino.cc/reference/en/language/structure/bitwise-operators/bitwiseor/
         delay(bouncetime);
         if (debug)Serial.println(a, BIN);
       }
     }
-    if (a && !newPress)
+    if (a && !newPress)  //after for loop, 'a' has some value, , new newPress = 1 to indicate a new charecter is available
       newPress = 1;
-    if (!x && newPress)
+    if (!x && newPress) //only when X goes back to 0, release the last known values of a
     {
       delay(3* bouncetime);
       return a;
