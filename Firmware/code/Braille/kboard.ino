@@ -1,3 +1,11 @@
+char convert(byte keys) {
+  for (int i = 0; i <= 54; i += 2) {
+    if (keyMap[i] == keys)
+      return keyMap[i - 1];
+  }
+  return 0;
+}
+
 char readKeys() {
   byte keys = waitForRelease();
   char c = convert(keys);
@@ -15,7 +23,8 @@ char readKeys() {
 }
 
 
-// Function that reads the pressed button values and stores them in a variable
+// Function that reads the pressed button values and stores them in a variable. only if button is pressed and released
+//would it return a value
 byte waitForRelease() {
   byte a = B000000; //initial value
   byte x = B000000; //initial value
@@ -33,12 +42,12 @@ byte waitForRelease() {
     }
     if (a && !newPress)  //after for loop, 'a' has some value, , new newPress = 1 to indicate a new charecter is available
       newPress = 1;
-    if (!x && newPress) //only when X goes back to 0, release the last known values of a
+    if (!x && newPress) //only when X goes back to 0, release the last known values of a, but untill then keep updating a
     {
       delay(3* bouncetime);
       return a;
     }
-    if (!a)
+    if (!a) //if none of the character buttons were pressed
       FnKeys();
   }
 }
@@ -55,31 +64,20 @@ void FnKeys() {
       if (digitalRead(pinMap[7]) == LOW)
         buttons |= 2;
     }
-    if (mode == usb) {
-      switch (buttons) {
-        case 1:   Keyboard.press(KEY_RETURN);
-          break;
-        case 2:   Keyboard.press(KEY_BACKSPACE);
-          break;
-        case 3:   Keyboard.write(' ');
-          break;
-      }
+//    if (mode == usb) {
+//      switch (buttons) {
+//        case 1:   Keyboard.press(KEY_RETURN);
+//          break;
+//        case 2:   Keyboard.press(KEY_BACKSPACE);
+//          break;
+//        case 3:   Keyboard.write(' ');
+//          break;
+//      }
       while (digitalRead(pinMap[7]) == LOW || digitalRead(pinMap[6]) == LOW);
-      Keyboard.releaseAll();
+      //Keyboard.releaseAll();
       delay(bouncetime/2);
     }
-    else if(mode == serial){
       Serial.print("FnButtons: ");
       Serial.println(buttons);
-    }
-  }
-}
 
-
-char convert(byte keys) {
-  for (int i = 0; i <= 54; i += 2) {
-    if (keyMap[i] == keys)
-      return keyMap[i - 1];
-  }
-  return 0;
 }
