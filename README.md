@@ -18,6 +18,8 @@ How the HID Keypad is implemented for use with Braille
 The Braille Alphabet—Internationally Standardised
 The letters a-z are common and standard for most braille country tables.
 
+### Charecters
+
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
 | a |	    ⠁	    | 1 |
@@ -46,6 +48,11 @@ The letters a-z are common and standard for most braille country tables.
 | x |	    ⠭	    | 1346 |
 | y |	    ⠽	    | 13456 |
 | z |	    ⠵	    | 1356 |
+
+### Numbers
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
 
 ##### TBD:
 - Number: using # followed by number untill space, or else #<space> for actually tying pound symbol
