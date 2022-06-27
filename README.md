@@ -77,7 +77,8 @@ Example:
 |,|⠂|2|
 |;|	⠆|23|
 |:|	⠒|25|
-|.|⠲|256|
+|.(Period)|⠲|256|
+|.(Decimal)|⠨|46|
 |?|	⠦|236|
 |!|⠖|235|
 |apostrophe '|⠄|3|
@@ -87,6 +88,12 @@ Example:
 |)|⠐⠜|5 345|
 |/|⠸⠌|456 34|
 |\|⠸⠡|456 34|
+|[|⠨⠣|456 34|
+|]|⠨⠜|456 34|
+|{|⠸⠣|456 34|
+|}|⠸⠜|456 34|
+|<|⠈⠣|456 34|
+|>|⠈⠜|456 34|
 |dash/hyphen|⠤|36|
 |long dash or hyphen|⠠⠤|6 36|
 
@@ -96,6 +103,7 @@ Example:
 |----------|:-------------:|------:|
 |&|	⠈⠯	|4 12346|
 |*|	⠐⠔	|5 35|
+|#| ⠸⠹ | 456 1456|
 |@	|⠈⠁|	4 1|
 |©|	⠘⠉	|45 14|
 |®	|⠘⠗	|45 1235|
@@ -112,10 +120,14 @@ Example:
 |capital word indicator| ⠠⠠ |6 6|
 |capital paragraph indicator| ⠠⠠⠠ |6 6 6|
 |capital terminator indicator| ⠠⠄ |6 3|
+|Keypad CapsLock(Activate)| ⠠⠠ |6 6|
+|Keypad CapsLock(Deactivate)| ⠠⠄|6 6|
 
 Capitals:
 ```
-Use ⠠⠠ to Capitalise proceeding charecter, ⠠⠠ to Capitalise a full word, ⠠⠠⠠ to capitalise a full passage and ⠠⠄
+Use ⠠⠠ to Capitalise proceeding charecter, ⠠⠠ to Capitalise a full word,
+⠠⠠⠠ to capitalise a full passage and ⠠⠄ to terminate. Using space/hyphen 
+etc resets to normal unless not using paragraph caps. 
 Warning: ⠠⠺⠁⠗⠝⠊⠝⠛
 WARNING: ⠠⠠⠺⠁⠗⠝⠊⠝⠛
 ```
@@ -130,3 +142,4 @@ WARNING: ⠠⠠⠺⠁⠗⠝⠊⠝⠛
 1. Generate Markdwn tables from https://www.tablesgenerator.com/markdown_tables
 2. Braille Code Referance: https://www.pharmabraille.com/braille-codes/unified-english-braille-ueb-code/
 3. Test and understand using online braille translator: https://www.branah.com/braille-translator
+4. Wikipedia entry https://en.wikipedia.org/wiki/English_Braille
