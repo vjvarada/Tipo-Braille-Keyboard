@@ -86,6 +86,7 @@ Example:
 |(|⠐⠣|5 126|
 |)|⠐⠜|5 345|
 |/|⠸⠌|456 34|
+|\|⠸⠡|456 34|
 |dash/hyphen|⠤|36|
 |long dash or hyphen|⠠⠤|6 36|
 
@@ -104,12 +105,20 @@ Example:
 |+	|⠐⠖	|5 235|
 |− (minus)|	⠐⠤	|5 36|
 |=	|⠐⠶	|5 2356|
-|×|	⠐⠦	|5 236|
+|×|	⠐⠦	|5 236| 
 |÷	|⠐⠌	|5 34|
 |grade 1 symbol indicator|	⠰	|56|
 |capital letter indicator|	⠠	|6|
+|capital word indicator| ⠠⠠ |6 6|
+|capital paragraph indicator| ⠠⠠⠠ |6 6 6|
+|capital terminator indicator| ⠠⠄ |6 3|
 
-
+Capitals:
+```
+Use ⠠⠠ to Capitalise proceeding charecter, ⠠⠠ to Capitalise a full word, ⠠⠠⠠ to capitalise a full passage and ⠠⠄
+Warning: ⠠⠺⠁⠗⠝⠊⠝⠛
+WARNING: ⠠⠠⠺⠁⠗⠝⠊⠝⠛
+```
 
 ##### TBD:
 - Number: using # followed by number untill space, or else #<space> for actually tying pound symbol
@@ -119,3 +128,5 @@ Example:
 #### References:
 
 1. Generate Markdwn tables from https://www.tablesgenerator.com/markdown_tables
+2. Braille Code Referance: https://www.pharmabraille.com/braille-codes/unified-english-braille-ueb-code/
+3. Test and understand using online braille translator: https://www.branah.com/braille-translator
