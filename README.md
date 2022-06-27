@@ -1,27 +1,57 @@
-# Tipo
+# TIPO
 Plug n Play Braille Keyboard for your smartphone
+Shows up as a HID device, and behaves just like a Keyboard would.
 
-# What is available?
-1. Arduino Firmware for a USB keyboard using atmega32u4
-2. Eagle CAD board files to print the PCB
+## TIPO V1
+USB HID only implementation using atmega32u4/Adruni Leonardo
 
-# TO-DO
-1. Remove bt ezkey module and get the arduino micro to type stuff onto notepad using 2 or 3 buttons - Done
+## TIPO BLE
 
-2. Repeat with USBOTG and make sure phone responds - Done
+BLE HID implementation using ESP32
 
-3. Connect 8 keys to micro on breadboard in matrix or parallel layout to verify all peri electronics - Done
+------------------------------------------------------------------
 
-4. Dump Leonardo bootloader to wild Atmega32u4 Chip - Done
+# Implementation:
+How the HID Keypad is implemented for use with Braille
 
-5. Breadboard standalone chip with external oscillator,caps,resistors etc - Skipped like a bawz
+## Grade 1 Braille
+The Braille Alphabet—Internationally Standardised
+The letters a-z are common and standard for most braille country tables.
 
-6. Design / Fab pcb and test with phone - Done
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| a |	    ⠁	    | 1 |
+| b |	    ⠃	    | 12 |
+| c |	    ⠉	    | 14 |
+| d |	    ⠙	    | 145 |
+| e |	    ⠑	    | 15 |
+| f |	    ⠋	    | 124 |
+| g |	    ⠛	    | 1245 |
+| h |	    ⠓	    | 125 |
+| i |	    ⠊	    | 24 |
+| j |	    ⠚	    | 245 |
+| k |	    ⠅	    | 13 |
+| l |	    ⠇	    | 123 |
+| m |	    ⠍	    | 134 |
+| n |	    ⠝	    | 1345 |
+| o |	    ⠕	    | 135 |
+| p |	    ⠏	    | 1234 |
+| q |	    ⠟	    | 12345 |
+| r |	    ⠗	    |1235 |
+| s |	    ⠎	    | 234 |
+| t |	    ⠞	    | 2345 |
+| u |	    ⠥	    | 136 |
+| v |	    ⠧	    | 1236 |
+| w |	    ⠺	    | 2456 | 
+| x |	    ⠭	    | 1346 |
+| y |	    ⠽	    | 13456 |
+| z |	    ⠵	    | 1356 |
 
-7. CAD Case
+##### TBD:
+- Number: using # followed by number untill space, or else #<space> for actually tying pound symbol
 
-8. Print case
 
-9. Give board to visually impared peeps & get feedback
 
-10. Brailler Trainer app
+#### References:
+
+1. Generate Markdwn tables from https://www.tablesgenerator.com/markdown_tables
