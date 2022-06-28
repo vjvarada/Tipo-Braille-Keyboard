@@ -22,6 +22,7 @@ The letters a-z are common and standard for most braille country tables.
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
+| letter sign | ⠰ | 56|
 | a |	    ⠁	    | 1 |
 | b |	    ⠃	    | 12 |
 | c |	    ⠉	    | 14 |
@@ -65,10 +66,11 @@ The letters a-z are common and standard for most braille country tables.
 | 9 |	⠼⠊	| 3456 24 |
 | 0 |	⠼⠚	| 3456 245 |
 
-The number indicator is placed before the first digit in a group.
+The number indicator is placed before the first digit in a group. Space, hyphen or clears it
 
 Example:
 ```100: 	⠼⠁⠚⠚```
+
 
 ### Punctuation
 
@@ -118,12 +120,11 @@ Example:
 |grade 1 symbol indicator|	⠰	|56|
 |capital letter indicator|	⠠	|6|
 |capital word indicator| ⠠⠠ |6 6|
-|capital paragraph indicator| ⠠⠠⠠ |6 6 6|
 |capital terminator indicator| ⠠⠄ |6 3|
 |Keypad CapsLock(Activate)| ⠠⠠ |6 6|
-|Keypad CapsLock(Deactivate)| ⠠⠄|6 6|
 
 Capitals:
+The capital(ization) sign ⠠ marks the first letter of a word as capitalized. It may occur in the middle of a word for camel case, as in the name deAngelo. It is doubled to place a word in all caps; this must be repeated for each word of an all-cap text.
 ```
 Use ⠠⠠ to Capitalise proceeding charecter, ⠠⠠ to Capitalise a full word,
 ⠠⠠⠠ to capitalise a full passage and ⠠⠄ to terminate. Using space/hyphen 
@@ -131,9 +132,19 @@ etc resets to normal unless not using paragraph caps.
 Warning: ⠠⠺⠁⠗⠝⠊⠝⠛
 WARNING: ⠠⠠⠺⠁⠗⠝⠊⠝⠛
 ```
+```
+Note: The letter sign (grade 1 symbol indicator) ⠰ is used to force the end of a series of numbers.
+For example, ⠙⠁ ⟨da⟩ preceded by a number sign, ⠼⠙⠁, is read as 41. 
+If instead 4a is intended (as in a section or apartment number), 
+then the letter sign is used to force a reading of a rather than 1 for the final character: ⠼⠙⠰⠁ ⟨4a⟩.
+
+It is also used to mark a character as standing for a letter rather than for a word. For example, ⠃ ⟨b⟩ on its own is normally read as the word but;
+to indicate that it is instead the letter b, the letter sign is used: ⠰⠃ b. Plurals of letters (mind your ps and qs)
+always use an apostrophe in braille, but other derivations may not, as in ⠰⠝⠹ nth [time]: ⠠⠎⠬ is Sing, ⠰⠠⠎⠬ is S-ing/Essing. The letter sign is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
+ ```
 
 ##### TBD:
-- Number: using # followed by number untill space, or else #<space> for actually tying pound symbol
+- Number: using # followed by number until space, or else #<space> for actually tying pound symbol
 
 
 
