@@ -66,10 +66,16 @@ The letters a-z are common and standard for most braille country tables.
 | 9 |	⠼⠊	| 3456 24 |
 | 0 |	⠼⠚	| 3456 245 |
 
-The number indicator is placed before the first digit in a group. Space, hyphen or clears it
+The number indicator (⠼) is placed before the first digit in a group. Space, hyphen, grade 1 indicator or clears it
 
 Example:
-```100: 	⠼⠁⠚⠚```
+```
+100: 	⠼⠁⠚⠚
+
+using Grade 1 indicator (⠰) to specify end of number
+221b:	⠼⠃⠃⠁⠰⠃
+```
+
 
 
 ### Punctuation
@@ -123,15 +129,19 @@ Example:
 |capital terminator indicator| ⠠⠄ |6 3|
 |Keypad CapsLock(Activate)| ⠠⠠ |6 6|
 
-Capitals:
-The capital(ization) sign ⠠ marks the first letter of a word as capitalized. It may occur in the middle of a word for camel case, as in the name deAngelo. It is doubled to place a word in all caps; this must be repeated for each word of an all-cap text.
+
 ```
+The capital(ization) sign ⠠ marks the first letter of a word as capitalized. 
+It may occur in the middle of a word for camel case, as in the name deAngelo. 
+It is doubled to place a word in all caps; this must be repeated for each word of an all-cap text.
 Use ⠠⠠ to Capitalise proceeding charecter, ⠠⠠ to Capitalise a full word,
 ⠠⠠⠠ to capitalise a full passage and ⠠⠄ to terminate. Using space/hyphen 
 etc resets to normal unless not using paragraph caps. 
 Warning: ⠠⠺⠁⠗⠝⠊⠝⠛
 WARNING: ⠠⠠⠺⠁⠗⠝⠊⠝⠛
 ```
+
+
 ```
 Note: The letter sign (grade 1 symbol indicator) ⠰ is used to force the end of a series of numbers.
 For example, ⠙⠁ ⟨da⟩ preceded by a number sign, ⠼⠙⠁, is read as 41. 
