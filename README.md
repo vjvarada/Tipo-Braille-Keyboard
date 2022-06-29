@@ -18,6 +18,9 @@ How the HID Keypad is implemented for use with Braille
 The Braille Alphabet—Internationally Standardised
 The letters a-z are common and standard for most braille country tables.
 
+Grade 1 braille is a letter-for-letter substitution of its printed counterpart. This is the preferred code for beginners because it allows people to get familiar with, and recognize different aspects of, the code while learning how to read braille. 
+
+English grade 1 braille consists of the 26 standard letters of the alphabet as well as punctuation.
 ### Charecters
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
@@ -152,6 +155,79 @@ It is also used to mark a character as standing for a letter rather than for a w
 to indicate that it is instead the letter b, the letter sign is used: ⠰⠃ b. Plurals of letters (mind your ps and qs)
 always use an apostrophe in braille, but other derivations may not, as in ⠰⠝⠹ nth [time]: ⠠⠎⠬ is Sing, ⠰⠠⠎⠬ is S-ing/Essing. The letter sign is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
  ```
+## Grade 2 Braille 
+
+The literary braille code, grade 2, uses “contractions” that substitute shorter sequences for the full spelling of commonly-occurring letter groups. The contractions are similar to English print contractions, like “cannot” versus “can’t”, in the way that a word is shortened. For example, “the” is usually a single character in braille. 
+Grade 2 braille is the most commonly used form of braille code and is found in books, public signage, and restaurant menus to name a few. It consists of the 26 standard letters of the alphabet, punctuation, and contractions.
+
+### Strong Groupsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| letter sign | ⠰ | 56|
+| st |	    ⠁	    | 1 |
+| ar |	    ⠃	    | 12 |
+| -ing |	    ⠓	    | 125 |
+| ch |	    ⠊	    | 24 |
+| gh |	    ⠚	    | 245 |
+| sh |	    ⠅	    | 13 |
+| th |	    ⠇	    | 123 |
+| wh |	    ⠍	    | 134 |
+| ed |	    ⠝	    | 1345 |
+| er |	    ⠕	    | 135 |
+| ou |	    ⠏	    | 1234 |
+| ow |	    ⠟	    | 12345 |
+
+
+### Lower Groupsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| -ea- |	    ⠗	    |1235 |
+| -bb- |	    ⠎	    | 234 |
+| -cc |	    ⠞	    | 2345 |
+| -ff |	    ⠥	    | 136 |
+| -gg- |	    ⠧	    | 1236 |
+| be |	    ⠺	    | 2456 | 
+| con |	    ⠭	    | 1346 |
+| dis |	    ⠽	    | 13456 |
+| en |	    ⠵	    | 1356 |
+| in |	    ⠽	    | 13456 |
+
+### Strong Contractions (Part and Whole Word)
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| and |	    ⠉	    | 14 |
+| for |	    ⠙	    | 145 |
+| of |	    ⠑	    | 15 |
+| the |	    ⠋	    | 124 |
+| with |	    ⠛	    | 1245 |
+
+### Strong Wordsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| child |	    ⠉	    | 14 |
+| shall |	    ⠙	    | 145 |
+| this |	    ⠑	    | 15 |
+| which |	    ⠋	    | 124 |
+| out |	    ⠛	    | 1245 |
+| still |	    ⠛	    | 1245 |
+
+### Lower Wordsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| be |	    ⠉	    | 14 |
+| enough |	    ⠙	    | 145 |
+| were |	    ⠑	    | 15 |
+| his |	    ⠋	    | 124 |
+| in |	    ⠛	    | 1245 |
+| was |	    ⠛	    | 1245 |
+
+
+
 
 ##### TBD:
 - Number: using # followed by number until space, or else #<space> for actually tying pound symbol
@@ -164,3 +240,4 @@ always use an apostrophe in braille, but other derivations may not, as in ⠰⠝
 2. Braille Code Referance: https://www.pharmabraille.com/braille-codes/unified-english-braille-ueb-code/
 3. Test and understand using online braille translator: https://www.branah.com/braille-translator
 4. Wikipedia entry https://en.wikipedia.org/wiki/English_Braille
+5. http://www.dotlessbraille.org/brailleindicators.htm#markup
