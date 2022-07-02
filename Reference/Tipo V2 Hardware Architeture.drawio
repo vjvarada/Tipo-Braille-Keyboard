@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-23T18:12:45.138Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 Safari/537.36" etag="7JVcFXmLjfni_NCr4Spu" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-02T10:58:19.457Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36" etag="EJyZCthkkiboxz6GtUrk" version="20.0.3" type="github">
   <diagram id="lsYqOXnfDiaivIdEOEWc" name="Page-1">
-    <mxGraphModel dx="1185" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,7 +31,7 @@
         <mxCell id="s43dKZY_mTrpJ9go2xti-8" value="Pin Breakout" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="410" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="s43dKZY_mTrpJ9go2xti-9" value="Vibration Motor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="s43dKZY_mTrpJ9go2xti-9" value="Vibration Motor + Driver" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="440" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="s43dKZY_mTrpJ9go2xti-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=-0.019;entryY=0.539;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="s43dKZY_mTrpJ9go2xti-10" target="s43dKZY_mTrpJ9go2xti-1" edge="1">
@@ -52,17 +52,11 @@
         <mxCell id="s43dKZY_mTrpJ9go2xti-11" value="Battery" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="220" width="90" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="s43dKZY_mTrpJ9go2xti-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.893;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="s43dKZY_mTrpJ9go2xti-12" target="s43dKZY_mTrpJ9go2xti-1" edge="1">
+        <mxCell id="h4DjuXXrMUamPbEEn1RI-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.356;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="h4DjuXXrMUamPbEEn1RI-1" target="s43dKZY_mTrpJ9go2xti-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s43dKZY_mTrpJ9go2xti-12" value="Scroll Encoder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="640" y="440" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Tuou86u3foo1NWHapglq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.827;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Tuou86u3foo1NWHapglq-1" target="s43dKZY_mTrpJ9go2xti-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Tuou86u3foo1NWHapglq-1" value="BT Pair Button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="540" width="90" height="60" as="geometry" />
+        <mxCell id="h4DjuXXrMUamPbEEn1RI-1" value="2X D Pad" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="570" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
