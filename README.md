@@ -75,8 +75,9 @@ Example:
 ```
 100: 	⠼⠁⠚⠚
 
-using Grade 1 indicator (⠰) to specify end of number
+using Grade 1 indicator/Letter sign (⠰) to specify end of number
 221b:	⠼⠃⠃⠁⠰⠃
+
 ```
 
 
@@ -85,26 +86,26 @@ using Grade 1 indicator (⠰) to specify end of number
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-|,|⠂|2|
-|;|	⠆|23|
-|:|	⠒|25|
-|.(Period)|⠲|256|
-|.(Decimal)|⠨|46|
-|?|	⠦|236|
-|!|⠖|235|
-|apostrophe '|⠄|3|
-|open quote " |⠦|236|
-|close quote " |⠴|356|
-|(|⠐⠣|5 126|
-|)|⠐⠜|5 345|
-|/|⠸⠌|456 34|
-|\|⠸⠡|456 34|
-|[|⠨⠣|456 34|
-|]|⠨⠜|456 34|
-|{|⠸⠣|456 34|
-|}|⠸⠜|456 34|
-|<|⠈⠣|456 34|
-|>|⠈⠜|456 34|
+|,|                     ⠂   |2|
+|;|                  	⠆   |23|
+|:|                    	⠒   |25|
+|.(Period)|             ⠲   |256|
+|.(Decimal)|            ⠨   |46|
+|?|     	            ⠦   |236|
+|!|                     ⠖   |235|
+|apostrophe '|          ⠄   |3|
+|open quote " |         ⠦   |236|
+|close quote " |        ⠴   |356|
+|(|                    ⠐⠣   |5 126|
+|)|                    ⠐⠜   |5 345|
+|/|                    ⠸⠌   |456 34|
+|\|                    ⠸⠡   |456 34|
+|[|                    ⠨⠣   |456 34|
+|]|                    ⠨⠜   |456 34|
+|{|                    ⠸⠣   |456 34|
+|}|                    ⠸⠜   |456 34|
+|<|                    ⠈⠣   |456 34|
+|>|                    ⠈⠜   |456 34|
 |dash/hyphen|⠤|36|
 |long dash or hyphen|⠠⠤|6 36|
 
@@ -112,25 +113,25 @@ using Grade 1 indicator (⠰) to specify end of number
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-|&|	⠈⠯	|4 12346|
-|*|	⠐⠔	|5 35|
-|#| ⠸⠹ | 456 1456|
-|@	|⠈⠁|	4 1|
-|©|	⠘⠉	|45 14|
-|®	|⠘⠗	|45 1235|
-|™	|⠘⠞	|45 2345|
-|°	|⠘⠚	|45 245|
-|%	|⠨⠴	|46 356|
-|+	|⠐⠖	|5 235|
-|− (minus)|	⠐⠤	|5 36|
-|=	|⠐⠶	|5 2356|
-|×|	⠐⠦	|5 236| 
-|÷	|⠐⠌	|5 34|
-|grade 1 symbol indicator|	⠰	|56|
-|capital letter indicator|	⠠	|6|
-|capital word indicator| ⠠⠠ |6 6|
-|capital terminator indicator| ⠠⠄ |6 3|
-|Keypad CapsLock(Activate)| ⠠⠠ |6 6|
+| & |	                          ⠈⠯	    | 4 12346|
+| * |	                          ⠐⠔	    | 5 35|
+| # |                             ⠸⠹       | 456 1456|
+| @	|                             ⠈⠁       | 4 1|
+| © |	                          ⠘⠉	    | 45 14|
+| ®	|                             ⠘⠗	    | 45 1235|
+| ™	|                             ⠘⠞	    | 45 2345|
+| °	|                             ⠘⠚	    | 45 245|
+| %	|                             ⠨⠴	    | 46 356|
+| +	|                             ⠐⠖	    | 5 235|
+| − (minus) |                 	  ⠐⠤	    | 5 36|
+| =	|                             ⠐⠶	    | 5 2356|
+| ×|	                          ⠐⠦	    | 5 236| 
+| ÷	|                             ⠐⠌	    | 5 34|
+| grade 1 symbol indicator |       ⠰	    | 56|
+| capital letter indicator |      ⠠	        | 6|
+| capital word indicator |        ⠠⠠       | 6 6|
+| capital terminator indicator |  ⠠⠄       | 6 3|
+| Keypad CapsLock(Activate) |     ⠠⠠       | 6 6|
 
 
 ```
@@ -160,6 +161,15 @@ always use an apostrophe in braille, but other derivations may not, as in ⠰⠝
 The literary braille code, grade 2, uses “contractions” that substitute shorter sequences for the full spelling of commonly-occurring letter groups. The contractions are similar to English print contractions, like “cannot” versus “can’t”, in the way that a word is shortened. For example, “the” is usually a single character in braille. 
 Grade 2 braille is the most commonly used form of braille code and is found in books, public signage, and restaurant menus to name a few. It consists of the 26 standard letters of the alphabet, punctuation, and contractions.
 
+
+```
+letter sign  (⠰) used to mark a character as standing for a letter rather than for a word. For example,
+ ⠃ ⟨b⟩ on its own is normally read as the word but; to indicate that it is instead the letter b, 
+the letter sign is used: ⠰⠃ b. Plurals of letters (mind your ps and qs) always use an apostrophe in braille,
+but other derivations may not, as in ⠰⠝⠹ nth [time]: ⠠⠎⠬ is Sing, ⠰⠠⠎⠬ is S-ing/Essing.[27] The letter sign 
+is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
+```
+
 ### Strong Groupsigns
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
@@ -167,7 +177,7 @@ Grade 2 braille is the most commonly used form of braille code and is found in b
 | letter sign | ⠰ | 56|
 | st |	    ⠁	    | 1 |
 | ar |	    ⠃	    | 12 |
-| -ing |	    ⠓	    | 125 |
+| -ing |    ⠓	    | 125 |
 | ch |	    ⠊	    | 24 |
 | gh |	    ⠚	    | 245 |
 | sh |	    ⠅	    | 13 |
@@ -183,11 +193,11 @@ Grade 2 braille is the most commonly used form of braille code and is found in b
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| -ea- |	    ⠗	    |1235 |
-| -bb- |	    ⠎	    | 234 |
+| -ea- |    ⠗	    |1235 |
+| -bb- |    ⠎	    | 234 |
 | -cc |	    ⠞	    | 2345 |
 | -ff |	    ⠥	    | 136 |
-| -gg- |	    ⠧	    | 1236 |
+| -gg- |    ⠧	    | 1236 |
 | be |	    ⠺	    | 2456 | 
 | con |	    ⠭	    | 1346 |
 | dis |	    ⠽	    | 13456 |
@@ -202,7 +212,7 @@ Grade 2 braille is the most commonly used form of braille code and is found in b
 | for |	    ⠙	    | 145 |
 | of |	    ⠑	    | 15 |
 | the |	    ⠋	    | 124 |
-| with |	    ⠛	    | 1245 |
+| with |    ⠛	    | 1245 |
 
 ### Strong Wordsigns
 
@@ -212,25 +222,58 @@ Grade 2 braille is the most commonly used form of braille code and is found in b
 | shall |	    ⠙	    | 145 |
 | this |	    ⠑	    | 15 |
 | which |	    ⠋	    | 124 |
-| out |	    ⠛	    | 1245 |
+| out |	        ⠛	    | 1245 |
 | still |	    ⠛	    | 1245 |
 
 ### Lower Wordsigns
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| be |	    ⠉	    | 14 |
-| enough |	    ⠙	    | 145 |
-| were |	    ⠑	    | 15 |
+| be |      ⠉	    | 14 |
+| enough |  ⠙	    | 145 |
+| were |    ⠑	    | 15 |
 | his |	    ⠋	    | 124 |
 | in |	    ⠛	    | 1245 |
 | was |	    ⠛	    | 1245 |
+
+
+### Alphabetic Wordsigns
+
+| CHARACTER   | WORD    |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|:-------------:|------:|
+| b | but |	            ⠃	    | 12 |
+| c | can |	            ⠉	    | 14 |
+| d | do |	            ⠙	    | 145 |
+| e | every|            ⠑	    | 15 |
+| f | from |            ⠋	    | 124 |
+| g | go |              ⠛	    | 1245 |
+| h | have |            ⠓	    | 125 |
+| j | just |            ⠚	    | 245 |
+| k | knowledge |	    ⠅	    | 13 |
+| l | like |	        ⠇	    | 123 |
+| m | more |	        ⠍	    | 134 |
+| n | not |	            ⠝	    | 1345 |
+| p | people |	        ⠏	    | 1234 |
+| q | quite |	        ⠟	    | 12345 |
+| r | rather |	        ⠗	    |1235 |
+| s | so |	            ⠎	    | 234 |
+| t | that |	        ⠞	    | 2345 |
+| u | us |	            ⠥	    | 136 |
+| v | very |	        ⠧	    | 1236 |
+| w | will |	        ⠺	    | 2456 | 
+| x | it |	            ⠭	    | 1346 |
+| y | you |	            ⠽	    | 13456 |
+| z | as |	            ⠵	    | 1356 |
 
 
 
 
 ##### TBD:
 - Number: using # followed by number until space, or else #<space> for actually tying pound symbol
+- Initial Letter Contractions
+- Final Letter Contractions
+- Shortform words
+- Navigation
 
 
 
@@ -241,3 +284,6 @@ Grade 2 braille is the most commonly used form of braille code and is found in b
 3. Test and understand using online braille translator: https://www.branah.com/braille-translator
 4. Wikipedia entry https://en.wikipedia.org/wiki/English_Braille
 5. http://www.dotlessbraille.org/brailleindicators.htm#markup
+6. Android & TalkBack Mobile Accessibility Cheat Sheet https://pauljadam.com/demos/talkbackcheatsheet.html
+7. Keyboard Shortcuts https://www.cnet.com/culture/keyboard-shortcuts-for-android-phones/
+8. Talkback Shortcuts https://dequeuniversity.com/screenreaders/talkback-shortcuts
