@@ -13,7 +13,7 @@ BLE HID implementation using ESP32
 # Hardware Connections
 
 ## Architecture
-![Hardware Architecture](Reference/Tipo V2 Hardware Architeture.drawio.png)
+![Hardware Architecture](https://github.com/vjvarada/Tipo-Braille-Keyboard/blob/master/Reference/Tipo%20V2%20Hardware%20Architeture.drawio.png?raw=true)
 
 ## Button Map:
 
