@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-07T04:49:55.991Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36" etag="Y-MfReycepa9CwSNeH3Q" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-07T04:55:44.259Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36" etag="azKkHizB2sIixiwWU8-a" version="20.0.4" type="github">
   <diagram id="lsYqOXnfDiaivIdEOEWc" name="Page-1">
-    <mxGraphModel dx="1422" dy="1890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="569" dy="1416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -85,10 +85,8 @@
         <mxCell id="hOt24TIBv7MaHTjzwmdE-1" value="USB Conenctor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="362.5" y="-30" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="hOt24TIBv7MaHTjzwmdE-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="hOt24TIBv7MaHTjzwmdE-12">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="470" y="240" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="hOt24TIBv7MaHTjzwmdE-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.518;entryY=-0.048;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hOt24TIBv7MaHTjzwmdE-12" target="hOt24TIBv7MaHTjzwmdE-23">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hOt24TIBv7MaHTjzwmdE-12" value="Voltage Regulator (AP2112k-3.3)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="370" y="90" width="120" height="60" as="geometry" />
@@ -98,6 +96,12 @@
         </mxCell>
         <mxCell id="hOt24TIBv7MaHTjzwmdE-19" value="Battery Gauge (MAX17048)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="530" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hOt24TIBv7MaHTjzwmdE-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hOt24TIBv7MaHTjzwmdE-23" target="s43dKZY_mTrpJ9go2xti-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hOt24TIBv7MaHTjzwmdE-23" value="Power Switch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="170" width="90" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
