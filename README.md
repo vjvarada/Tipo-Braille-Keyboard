@@ -12,6 +12,9 @@ BLE HID implementation using ESP32
 ------------------------------------------------------------------
 # Hardware Connections
 
+## Architecture
+![Hardware Architecture](Reference/Tipo V2 Hardware Architeture.drawio.png)
+
 ## Button Map:
 
 | Button | ESP32 Pin # |
