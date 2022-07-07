@@ -10,6 +10,29 @@ USB HID only implementation using atmega32u4/Adruni Leonardo
 BLE HID implementation using ESP32
 
 ------------------------------------------------------------------
+# Hardware Connections
+
+## Button Map:
+
+| Button | ESP32 Pin # |
+| :------: | :-----------:|
+| BTN1 | 25|
+| BTN2 | 26|
+| BTN3 | 27|
+| BTN4 | 13|
+| BTN5 | 15|
+| BTN6 | 2 |
+| BTN7 | 19|
+| BTN8 | 18|
+| BTN9 | 17|
+| BTN10| 16|
+| BTN11| 4 |
+| CNT | 33|
+| UP | 34 |
+| DWN | 35|
+| LFT | 36|
+| RGT | 39|
+
 
 # Implementation:
 How the HID Keypad is implemented for use with Braille
