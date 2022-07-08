@@ -1,0 +1,16 @@
+#define BTN1 22
+#define BTN2 25
+#define BTN3 14
+#define BTN4 19
+#define BTN5 26
+#define BTN6 27
+#define BTN7 13
+#define BTN8 12
+#define BTN9 32
+#define BTN10 33
+#define BTN11 39
+#define CNT 15
+#define UP 16
+#define DWN 2
+#define RGT 17
+#define LFT 4
