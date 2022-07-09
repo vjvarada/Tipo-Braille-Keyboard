@@ -14,3 +14,5 @@
 #define DWN 2
 #define RGT 17
 #define LFT 4
+#define statusLED -1
+#define vibrationMotor -1
