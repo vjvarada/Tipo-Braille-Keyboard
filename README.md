@@ -119,7 +119,7 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 |?|     	            ⠦   |236|
 |!|                     ⠖   |235|
 |apostrophe '|          ⠄   |3|
-|quote " |        ⠴   |356|
+|quote " |              ⠴   |356|
 |dash/hyphen - |        ⠤   |36|
 
 
@@ -127,46 +127,52 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| & |	                          ⠈⠯	    | 4 12346|
-| * |	                          ⠐⠔	    | 5 35|
-| # |                             ⠸⠹       | 456 1456|
-| @	|                             ⠈⠁       | 4 1|
-| © |	                          ⠘⠉	    | 45 14|
-| ®	|                             ⠘⠗	    | 45 1235|
-| ™	|                             ⠘⠞	    | 45 2345|
-| °	|                             ⠘⠚	    | 45 245|
-| %	|                             ⠨⠴	    | 46 356|
-| +	|                             ⠐⠖	    | 5 235|
-| − (minus) |                 	  ⠐⠤	    | 5 36|
-| =	|                             ⠐⠶	    | 5 2356|
-| ×|	                          ⠐⠦	    | 5 236| 
-| ÷	|                             ⠐⠌	    | 5 34|
-|(|                    ⠐⠣   |5 126|
-|)|                    ⠐⠜   |5 345|
-| / |                    ⠸⠌   |456 34|
-| \ |                    ⠸⠡   |456 16|
-|[|                    ⠨⠣   |46 126|
-|]|                    ⠨⠜   |46 344|
-|{|                    ⠸⠣   |456 126|
-|}|                    ⠸⠜   |456 345|
-| < |                    ⠈⠣   |4 34|
-| > |                    ⠈⠜   |4 345|
-|Underscore _|⠨⠤|6 36|
+| & |	                 ⠈⠯	    | 4 12346|
+| * |	                 ⠐⠔	    | 5 35|
+| # |                    ⠸⠹        | 456 1456|
+| @	|                    ⠈⠁        | 4 1|
+| © |	                 ⠘⠉	    | 45 14|
+| ®	|                    ⠘⠗	    | 45 1235|
+| ™	|                    ⠘⠞	    | 45 2345|
+| °	|                    ⠘⠚	    | 45 245|
+| %	|                    ⠨⠴	    | 46 356|
+| +	|                    ⠐⠖	    | 5 235|
+| − (minus) |            ⠐⠤	    | 5 36|
+| =	|                    ⠐⠶	    | 5 2356|
+| × |	                 ⠐⠦        | 5 236 | 
+| ÷	|                    ⠐⠌        | 5 34 |
+| ~ |                    ⠈⠔        | 4 35 |
+| ` |                    ⠘⠡        | 45 16
+| ^ |                    ⠈⠢        |4 26 |
+| Underscore _ |         ⠨⠤        |46 36|
+| Verical Line |         ⠸⠳        |456 1256| 
+| / |                    ⠸⠌        |456 34|
+| \ |                    ⠸⠡        |456 16|
+| ( |                    ⠐⠣        |5 126|
+| ) |                    ⠐⠜        |5 345|
+| [ |                    ⠨⠣        |46 126|
+| ] |                    ⠨⠜        |46 345|
+| { |                    ⠸⠣        |456 126|
+| } |                    ⠸⠜        |456 345|
+| < |                    ⠈⠣        |4 126|
+| > |                    ⠈⠜        |4 345|
+| $ |                    ⠈⠎        |4 234
+
 
 
 ### Indicators
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| number indicator |	⠼ 	| 3456 |
-| grade 1 letter indicator |       ⠰	    | 56|
-| grade 1 word indicator |       ⠰⠰	    | 56 56|
-| grade 1 lock indicator |       ⠰⠰⠰	    | 56 56|
+| number indicator |                	⠼    	| 3456 |
+| grade 1 letter indicator |           ⠰	    | 56|
+| grade 1 word indicator |             ⠰⠰	    | 56 56|
+| grade 1 lock indicator |             ⠰⠰⠰	    | 56 56|
 | grade 1 terminator indicator |       ⠰⠄	    | 56 3|
-| capital letter indicator |      ⠠	        | 6|
-| capital word indicator |        ⠠⠠       | 6 6|
-| capital lock indicator |        ⠠⠠⠠       | 6 6 6|
-| capital terminator indicator |  ⠠⠄       | 6 3|
+| capital letter indicator |           ⠠	    | 6|
+| capital word indicator |             ⠠⠠      | 6 6|
+| capital lock indicator |             ⠠⠠⠠     | 6 6 6|
+| capital terminator indicator |       ⠠⠄      | 6 3|
 
 ```
 The capital(ization) sign ⠠ marks the first letter of a word as capitalized. 
@@ -259,7 +265,7 @@ is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
 |----------|:-------------:|------:|
 | ch |	    ⠁	    | 1 |
 | sh |	    ⠃	    | 12 |
-| th |    ⠓	    | 125 |
+| th |      ⠓	    | 125 |
 | wh |	    ⠊	    | 24 |
 | ou |	    ⠚	    | 245 |
 | st |	    ⠅	    | 13 |
@@ -275,11 +281,11 @@ is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| ea |    ⠗	    |1235 |
-| bb |    ⠎	    | 234 |
+| ea |      ⠗	    |1235 |
+| bb |      ⠎	    | 234 |
 | cc |	    ⠞	    | 2345 |
 | ff |	    ⠥	    | 136 |
-| gg |    ⠧	    | 1236 |
+| gg |      ⠧	    | 1236 |
 | be |	    ⠺	    | 2456 | 
 | con |	    ⠭	    | 1346 |
 | dis |	    ⠽	    | 13456 |
