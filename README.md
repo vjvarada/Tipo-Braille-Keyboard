@@ -116,24 +116,12 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 |;|                  	⠆   |23|
 |:|                    	⠒   |25|
 |.(Period)|             ⠲   |256|
-|.(Decimal)|            ⠨   |46|
 |?|     	            ⠦   |236|
 |!|                     ⠖   |235|
 |apostrophe '|          ⠄   |3|
-|open quote " |         ⠦   |236|
-|close quote " |        ⠴   |356|
-|(|                    ⠐⠣   |5 126|
-|)|                    ⠐⠜   |5 345|
-| / |                    ⠸⠌   |456 34|
-| \ |                    ⠸⠡   |456 34|
-|[|                    ⠨⠣   |456 34|
-|]|                    ⠨⠜   |456 34|
-|{|                    ⠸⠣   |456 34|
-|}|                    ⠸⠜   |456 34|
-| < |                    ⠈⠣   |456 34|
-| > |                    ⠈⠜   |456 34|
-|dash/hyphen|⠤|36|
-|long dash or hyphen|⠠⠤|6 36|
+|quote " |        ⠴   |356|
+|dash/hyphen - |        ⠤   |36|
+
 
 ### Symbols
 
@@ -153,12 +141,32 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 | =	|                             ⠐⠶	    | 5 2356|
 | ×|	                          ⠐⠦	    | 5 236| 
 | ÷	|                             ⠐⠌	    | 5 34|
-| grade 1 symbol indicator |       ⠰	    | 56|
+|(|                    ⠐⠣   |5 126|
+|)|                    ⠐⠜   |5 345|
+| / |                    ⠸⠌   |456 34|
+| \ |                    ⠸⠡   |456 16|
+|[|                    ⠨⠣   |46 126|
+|]|                    ⠨⠜   |46 344|
+|{|                    ⠸⠣   |456 126|
+|}|                    ⠸⠜   |456 345|
+| < |                    ⠈⠣   |4 34|
+| > |                    ⠈⠜   |4 345|
+|Underscore _|⠨⠤|6 36|
+
+
+### Indicators
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| number indicator |	⠼ 	| 3456 |
+| grade 1 letter indicator |       ⠰	    | 56|
+| grade 1 word indicator |       ⠰⠰	    | 56 56|
+| grade 1 lock indicator |       ⠰⠰⠰	    | 56 56|
+| grade 1 terminator indicator |       ⠰⠄	    | 56 3|
 | capital letter indicator |      ⠠	        | 6|
 | capital word indicator |        ⠠⠠       | 6 6|
+| capital lock indicator |        ⠠⠠⠠       | 6 6 6|
 | capital terminator indicator |  ⠠⠄       | 6 3|
-| Keypad CapsLock(Activate) |     ⠠⠠       | 6 6|
-
 
 ```
 The capital(ization) sign ⠠ marks the first letter of a word as capitalized. 
@@ -195,74 +203,6 @@ the letter sign is used: ⠰⠃ b. Plurals of letters (mind your ps and qs) alwa
 but other derivations may not, as in ⠰⠝⠹ nth [time]: ⠠⠎⠬ is Sing, ⠰⠠⠎⠬ is S-ing/Essing.[27] The letter sign 
 is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
 ```
-
-### Strong Groupsigns
-
-| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
-|----------|:-------------:|------:|
-| letter sign | ⠰ | 56|
-| st |	    ⠁	    | 1 |
-| ar |	    ⠃	    | 12 |
-| -ing |    ⠓	    | 125 |
-| ch |	    ⠊	    | 24 |
-| gh |	    ⠚	    | 245 |
-| sh |	    ⠅	    | 13 |
-| th |	    ⠇	    | 123 |
-| wh |	    ⠍	    | 134 |
-| ed |	    ⠝	    | 1345 |
-| er |	    ⠕	    | 135 |
-| ou |	    ⠏	    | 1234 |
-| ow |	    ⠟	    | 12345 |
-
-
-### Lower Groupsigns
-
-| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
-|----------|:-------------:|------:|
-| -ea- |    ⠗	    |1235 |
-| -bb- |    ⠎	    | 234 |
-| -cc |	    ⠞	    | 2345 |
-| -ff |	    ⠥	    | 136 |
-| -gg- |    ⠧	    | 1236 |
-| be |	    ⠺	    | 2456 | 
-| con |	    ⠭	    | 1346 |
-| dis |	    ⠽	    | 13456 |
-| en |	    ⠵	    | 1356 |
-| in |	    ⠽	    | 13456 |
-
-### Strong Contractions (Part and Whole Word)
-
-| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
-|----------|:-------------:|------:|
-| and |	    ⠉	    | 14 |
-| for |	    ⠙	    | 145 |
-| of |	    ⠑	    | 15 |
-| the |	    ⠋	    | 124 |
-| with |    ⠛	    | 1245 |
-
-### Strong Wordsigns
-
-| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
-|----------|:-------------:|------:|
-| child |	    ⠉	    | 14 |
-| shall |	    ⠙	    | 145 |
-| this |	    ⠑	    | 15 |
-| which |	    ⠋	    | 124 |
-| out |	        ⠛	    | 1245 |
-| still |	    ⠛	    | 1245 |
-
-### Lower Wordsigns
-
-| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
-|----------|:-------------:|------:|
-| be |      ⠉	    | 14 |
-| enough |  ⠙	    | 145 |
-| were |    ⠑	    | 15 |
-| his |	    ⠋	    | 124 |
-| in |	    ⠛	    | 1245 |
-| was |	    ⠛	    | 1245 |
-
-
 ### Alphabetic Wordsigns
 
 | CHARACTER   | WORD    |      BRAILLE      |  BRAILLE DOT/BUTTON # |
@@ -291,7 +231,72 @@ is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
 | y | you |	            ⠽	    | 13456 |
 | z | as |	            ⠵	    | 1356 |
 
+### Strong Contractions (Part and Whole Word)
 
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| and |	    ⠯	    | 14 |
+| for |	    ⠙	    | 145 |
+| of |	    ⠑	    | 15 |
+| the |	    ⠋	    | 124 |
+| with |    ⠛	    | 1245 |
+
+### Strong Wordsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| child |	    ⠡	    | 14 |
+| shall |	    ⠩	    | 145 |
+| this |	    ⠑	    | 15 |
+| which |	    ⠋	    | 124 |
+| out |	        ⠛	    | 1245 |
+| still |	    ⠛	    | 1245 |
+
+
+### Strong Groupsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| ch |	    ⠁	    | 1 |
+| sh |	    ⠃	    | 12 |
+| th |    ⠓	    | 125 |
+| wh |	    ⠊	    | 24 |
+| ou |	    ⠚	    | 245 |
+| st |	    ⠅	    | 13 |
+| gh |	    ⠇	    | 123 |
+| ed |	    ⠍	    | 134 |
+| er |	    ⠝	    | 1345 |
+| ow |	    ⠕	    | 135 |
+| ar |	    ⠏	    | 1234 |
+| ing |	    ⠟	    | 12345 |
+
+
+### Lower Groupsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| ea |    ⠗	    |1235 |
+| bb |    ⠎	    | 234 |
+| cc |	    ⠞	    | 2345 |
+| ff |	    ⠥	    | 136 |
+| gg |    ⠧	    | 1236 |
+| be |	    ⠺	    | 2456 | 
+| con |	    ⠭	    | 1346 |
+| dis |	    ⠽	    | 13456 |
+| en |	    ⠵	    | 1356 |
+| in |	    ⠽	    | 13456 |
+
+
+### Lower Wordsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+| be |      ⠉	    | 14 |
+| enough |  ⠙	    | 145 |
+| were |    ⠑	    | 15 |
+| his |	    ⠋	    | 124 |
+| in |	    ⠛	    | 1245 |
+| was |	    ⠛	    | 1245 |
 
 
 ##### TBD:

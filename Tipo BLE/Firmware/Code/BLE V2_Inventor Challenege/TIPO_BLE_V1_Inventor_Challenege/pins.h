@@ -16,3 +16,9 @@
 #define LFT 4
 #define statusLED -1
 #define vibrationMotor -1
+
+#define braillePinMapArrayLength  (sizeof(braillePinMap) / sizeof(braillePinMap[0]))
+#define functionPinMapArrayLength  (sizeof(functionPinMap) / sizeof(functionPinMap[0]))
+#define grade1CharMapArrayLength (sizeof(grade1CharMap) / sizeof(grade1CharMap[0]))
+#define grade1NumMapArrayLength (sizeof(grade1NumMap) / sizeof(grade1NumMap[0]))
+#define grade1CapCharMapArrayLength (sizeof(grade1CapCharMap) / sizeof(grade1CapCharMap[0]))

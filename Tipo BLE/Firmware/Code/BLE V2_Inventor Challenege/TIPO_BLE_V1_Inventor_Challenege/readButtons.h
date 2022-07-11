@@ -1,5 +1,5 @@
-byte brailleButtonPinMap[] = {BTN6 , BTN5, BTN4, BTN3, BTN2, BTN1};
-byte functionButtonPinMap[] = {CNT , UP, DWN, LFT, RGT, BTN10, BTN9, BTN8, BTN7};
+byte braillePinMap[] = {BTN6 , BTN5, BTN4, BTN3, BTN2, BTN1};
+byte functionPinMap[] = {CNT , UP, DWN, LFT, RGT, BTN10, BTN9, BTN8, BTN7};
 
 int bouncetime = 50;
 bool brailleButtonHeldFlag = false;
@@ -15,9 +15,9 @@ struct buttonInfo {
 
 
 bool isBrailleButtonPressed() {
-  for (int i = 0; i < 6; i++)
+  for (int i = 0; i < braillePinMapArrayLength; i++)
   {
-    if (digitalRead(brailleButtonPinMap[i]) == LOW) {
+    if (digitalRead(braillePinMap[i]) == LOW) {
       if (brailleButtonHeldFlag == false) {
         brailleButtonpressedTime = millis();
         brailleButtonHeldFlag = true;
@@ -30,9 +30,9 @@ bool isBrailleButtonPressed() {
 }
 
 bool isFunctionKeyPressed() {
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < functionPinMapArrayLength; i++)
   {
-    if (digitalRead(functionButtonPinMap[i]) == LOW) {
+    if (digitalRead(functionPinMap[i]) == LOW) {
       if (functionButtonHeldFlag == false) {
         functionButtonPressedTime = millis();
         functionButtonHeldFlag = true;
@@ -41,6 +41,7 @@ bool isFunctionKeyPressed() {
     }
   }
   functionButtonHeldFlag = false;
+  bleKeyboard.releaseAll(); 
   return false;
 }
 
@@ -51,14 +52,14 @@ bool isFunctionKeyPressed() {
   Returns: struct buttonInfo, with the braille button states and hold time,
   with value of button 1 at MSB and 6 at LSB
 */
-buttonInfo getbrailleButtonInfo() {
+buttonInfo getbrailleButtonState() {
   buttonInfo buttons;
   buttons.state = 0b0;
   buttons.holdTime = 0 ;
   while (isBrailleButtonPressed()) {
 
-    for (int i = 0; i < 6; i++) {
-      if (digitalRead(brailleButtonPinMap[i]) == LOW)
+    for (int i = 0; i < braillePinMapArrayLength; i++) {
+      if (digitalRead(braillePinMap[i]) == LOW)
         buttons.state = buttons.state | 1 << i;
     }
   }
@@ -80,8 +81,8 @@ buttonInfo getFunctionButtonState() {
   buttons.state = 0b0;
   buttons.holdTime = 0 ;
 
-  for (int i = 0; i < 9; i++) {
-    if (digitalRead(functionButtonPinMap[i]) == LOW)
+  for (int i = 0; i < functionPinMapArrayLength; i++) {
+    if (digitalRead(functionPinMap[i]) == LOW)
       buttons.state = buttons.state | 1 << i;
   }
   if (buttons.state > 0) {
