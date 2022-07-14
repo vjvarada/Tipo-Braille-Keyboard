@@ -1,3 +1,4 @@
+
 #include <BleKeyboard.h> //https://github.com/T-vK/ESP32-BLE-Keyboard
 BleKeyboard  bleKeyboard("Braille keyboard", "Vijay", 100);
 
@@ -7,8 +8,6 @@ BleKeyboard  bleKeyboard("Braille keyboard", "Vijay", 100);
 #include "grade2Braille.h"
 #include "shortcuts.h"
 #include "processButtons.h"
-
-
 
 void setup() {
   for (int i = 0; i < braillePinMapArrayLength; i++)

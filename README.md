@@ -120,7 +120,7 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 |!|                     ⠖   |235|
 |apostrophe '|          ⠄   |3|
 |quote " |              ⠴   |356|
-|dash/hyphen - |        ⠤   |36|
+|hyphen - |             ⠤   |36|
 
 
 ### Symbols
@@ -131,16 +131,10 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 | * |	                 ⠐⠔	    | 5 35|
 | # |                    ⠸⠹        | 456 1456|
 | @	|                    ⠈⠁        | 4 1|
-| © |	                 ⠘⠉	    | 45 14|
-| ®	|                    ⠘⠗	    | 45 1235|
-| ™	|                    ⠘⠞	    | 45 2345|
-| °	|                    ⠘⠚	    | 45 245|
 | %	|                    ⠨⠴	    | 46 356|
 | +	|                    ⠐⠖	    | 5 235|
 | − (minus) |            ⠐⠤	    | 5 36|
 | =	|                    ⠐⠶	    | 5 2356|
-| × |	                 ⠐⠦        | 5 236 | 
-| ÷	|                    ⠐⠌        | 5 34 |
 | ~ |                    ⠈⠔        | 4 35 |
 | ` |                    ⠘⠡        | 45 16
 | ^ |                    ⠈⠢        |4 26 |
@@ -156,7 +150,8 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 | } |                    ⠸⠜        |456 345|
 | < |                    ⠈⠣        |4 126|
 | > |                    ⠈⠜        |4 345|
-| $ |                    ⠈⠎        |4 234
+| $ |                    ⠈⠎        |4 234 |
+| " |                    ⠠⠶        |6 2346 |
 
 
 
@@ -241,72 +236,74 @@ is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| and |	    ⠯	    | 14 |
-| for |	    ⠙	    | 145 |
-| of |	    ⠑	    | 15 |
-| the |	    ⠋	    | 124 |
-| with |    ⠛	    | 1245 |
+| and |	    ⠯	    | 12346 |
+| for |	    ⠿	    | 123456 |
+| of |	    ⠷	    | 12356 |
+| the |	    ⠮	    | 2346 |
+| with |    ⠾	    | 23456 |
 
 ### Strong Wordsigns
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| child |	    ⠡	    | 14 |
-| shall |	    ⠩	    | 145 |
-| this |	    ⠑	    | 15 |
-| which |	    ⠋	    | 124 |
-| out |	        ⠛	    | 1245 |
-| still |	    ⠛	    | 1245 |
+| child |	    ⠡	    | 16 |
+| shall |	    ⠩	    | 146 |
+| this |	    ⠹	    | 1456 |
+| which |	    ⠱	    | 156 |
+| out |	        ⠳	    | 1256 |
+| still |	    ⠌	    | 34 |
 
+isStandingAlone?
 
 ### Strong Groupsigns
 
-| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
-|----------|:-------------:|------:|
-| ch |	    ⠁	    | 1 |
-| sh |	    ⠃	    | 12 |
-| th |      ⠓	    | 125 |
-| wh |	    ⠊	    | 24 |
-| ou |	    ⠚	    | 245 |
-| st |	    ⠅	    | 13 |
-| gh |	    ⠇	    | 123 |
-| ed |	    ⠍	    | 134 |
-| er |	    ⠝	    | 1345 |
-| ow |	    ⠕	    | 135 |
-| ar |	    ⠏	    | 1234 |
-| ing |	    ⠟	    | 12345 |
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # | Note |
+|----------|:-------------:|:------:|------:|
+| -ch- |	    ⠡	    | 16 | Letter join on either side|
+| -sh- |	    ⠩	    | 146 |Letter join on either side|
+| -th- |        ⠹	    | 1456 |Letter join on either side|
+| -wh- |	    ⠱	    | 156 |Letter join on either side|
+| -ou- |	    ⠳	    | 1256 |Letter join on either side|
+| -st- |	    ⠌	    | 34 |Letter join on either side|
+|------|----------------|----| -------------------------|
+| gh |	        ⠣	    | 126 |
+| ed |	        ⠫	    | 1246 |
+| er |	        ⠻	    | 12456 |
+| ow |          ⠪	    | 246 |
+| ar |  	    ⠜	    | 345 |
+| -ing |	    ⠬	    | 346 |Letter join on one side only, cannot be used to start a word|
 
 
 ### Lower Groupsigns
 
-| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
-|----------|:-------------:|------:|
-| ea |      ⠗	    |1235 |
-| bb |      ⠎	    | 234 |
-| cc |	    ⠞	    | 2345 |
-| ff |	    ⠥	    | 136 |
-| gg |      ⠧	    | 1236 |
-| be |	    ⠺	    | 2456 | 
-| con |	    ⠭	    | 1346 |
-| dis |	    ⠽	    | 13456 |
-| en |	    ⠵	    | 1356 |
-| in |	    ⠽	    | 13456 |
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # | Note |
+|----------|:-------------:|:------:|------:|
+| -ea- |      ⠂	    | 2|Letters join on both side|
+| -bb- |      ⠆	    | 23 |Letters join on both side|
+| -cc- |      ⠒	    | 25 |Letters join on both side|
+| -ff- |	  ⠖	    | 235 |Letters join on both side|
+| -gg- |      ⠶	    | 2356 |Letters join on both side|
+|------|----------------|----| -------------------------|
+| be- |	      ⠆	    | 23 | |
+| con- |	  ⠒	    | 25 |Letters join on one side only |
+| dis- |	  ⠲	    | 256 |Letters join on one side only |
+| -en- |	  ⠢	    | 26 |Letter join on either side|
+| in |	      ⠔	    | 35 | |
 
 
 ### Lower Wordsigns
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-| be |      ⠉	    | 14 |
-| enough |  ⠙	    | 145 |
-| were |    ⠑	    | 15 |
-| his |	    ⠋	    | 124 |
-| in |	    ⠛	    | 1245 |
-| was |	    ⠛	    | 1245 |
-
+| be |      ⠆	    | 23 |
+| enough |  ⠢	    | 26 |
+| were |    ⠶	    | 2356 |
+| his |	    ⠦	    | 236 |
+| in |	    ⠔	    | 35 |
+| was |	    ⠴	    | 356 |
 
 ##### TBD:
-- Number: using # followed by number until space, or else #<space> for actually tying pound symbol
 - Initial Letter Contractions
 - Final Letter Contractions
 - Shortform words
@@ -324,3 +321,6 @@ is also used to mark lower-case Roman numbers, as in ⠰⠊⠊⠊ ⟨iii⟩.
 6. Android & TalkBack Mobile Accessibility Cheat Sheet https://pauljadam.com/demos/talkbackcheatsheet.html
 7. Keyboard Shortcuts https://www.cnet.com/culture/keyboard-shortcuts-for-android-phones/
 8. Talkback Shortcuts https://dequeuniversity.com/screenreaders/talkback-shortcuts
+9. Braille to Binary encoder https://www.dcode.fr/braille-alphabet
+
+hello o 
