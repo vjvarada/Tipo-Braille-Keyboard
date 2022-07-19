@@ -1,7 +1,7 @@
 byte braillePinMap[] = {BTN6 , BTN5, BTN4, BTN3, BTN2, BTN1};
-byte functionPinMap[] = {CNT , UP, DWN, LFT, RGT, BTN10, BTN9, BTN8, BTN7};
+byte functionPinMap[] = {CNT , UP, DWN, LFT, RGT, BTN11, BTN10, BTN9, BTN8, BTN7};
 
-int bouncetime = 50;
+int bounceTime = 50;
 bool brailleButtonHeldFlag = false;
 bool functionButtonHeldFlag = false;
 unsigned long brailleButtonpressedTime = 0;
@@ -41,7 +41,7 @@ bool isFunctionKeyPressed() {
     }
   }
   functionButtonHeldFlag = false;
-  bleKeyboard.releaseAll(); 
+  bleKeyboard.releaseAll();
   return false;
 }
 

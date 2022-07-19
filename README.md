@@ -303,6 +303,66 @@ isStandingAlone?
 | in |	    ⠔	    | 35 |
 | was |	    ⠴	    | 356 |
 
+
+### Initial Letter Contractions
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+|    day |  |5 145
+|   ever |  |5 15
+|  father | |5 124
+|    here | |5 125
+|    know | |5 13
+|    lord | |5 123
+|    mother |   |5 134
+|    name | |5 1345
+|    one |  |5 135
+|    part | |5 1234
+|    question | |5 12345
+|    right |    |5 1235
+|    some | |5 234
+|    time | |5 2345
+|    under | |5 136
+|    work | |5 2456
+|    young | |5 13456
+|    there | |5 2346
+|    character | |5 16
+|    through | |5 1456
+|    where | |5 156
+|    ought | |5 1256
+|    upon | |45 136
+|    word | |45 2456
+|    these | |45 2346
+|    those | |45 1456
+|    whose | |45 156
+|    cannot | |456 14
+|    had | |456 125
+|    many | |456 134
+|    spirit | |456 234
+|    world | |456 2456
+|    their | |456 2346
+
+### final Letter Groupsigns
+
+| CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
+|----------|:-------------:|------:|
+|ound| | 46 145
+|ance| | 46 15
+|sion| | 46 1345
+|less| | 46 234
+|ount| | 46 2345
+|ence| | 56 15
+|ong| | 56 1245
+|ful| | 56 123
+|tion| | 56 1345
+|ness| | 56 234
+|ment| | 56 2345
+|ity| | 56 13456
+
+
+
+
+
 ##### TBD:
 - Initial Letter Contractions
 - Final Letter Contractions

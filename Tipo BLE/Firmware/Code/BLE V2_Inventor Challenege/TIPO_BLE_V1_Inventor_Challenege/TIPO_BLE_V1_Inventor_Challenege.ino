@@ -1,6 +1,6 @@
 
 #include <BleKeyboard.h> //https://github.com/T-vK/ESP32-BLE-Keyboard
-BleKeyboard  bleKeyboard("Braille keyboard", "Vijay", 100);
+BleKeyboard  bleKeyboard(" BraillePad", "Vijay", 100);
 
 #include "pins.h"
 #include "readButtons.h"
@@ -18,6 +18,14 @@ void setup() {
   {
     pinMode(functionPinMap[i], INPUT_PULLUP);
   }
+  pinMode(vibrationMotor, OUTPUT);
+  pinMode(statusLED, OUTPUT);
+  digitalWrite(statusLED, HIGH);
+  digitalWrite(vibrationMotor, HIGH);
+  delay(50);
+  digitalWrite(vibrationMotor, LOW);
+  digitalWrite(statusLED, LOW);
+
   Serial.begin(115200);
   bleKeyboard.begin();
 }
@@ -29,6 +37,18 @@ void loop() {
       processBrailleButtonState(getbrailleButtonState());
     if (isFunctionKeyPressed())
       processFunctionButtonState(getFunctionButtonState());
-    delay(bouncetime);
+    Serial.println(typedWord);
+    delay(bounceTime);
   }
 }
+
+
+/*
+TO DO
+Shortcuts
+end contractions
+lower wordsigs ard groupsigns
+battery level vibration
+battery level to phone
+BT pair mode on/off
+*/
