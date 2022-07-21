@@ -169,6 +169,41 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 | capital lock indicator |             ⠠⠠⠠     | 6 6 6|
 | capital terminator indicator |       ⠠⠄      | 6 3|
 
+
+## Shortcuts
+
+| CHARACTER   |      Shortcut      |  Key Combo |
+|----------|:-------------:|------:|
+| a | Assistant | win |
+| b | Back | alt + backspace |
+| l | Apps List / Select All | Ctrl + a |
+| c | Copy | ctrl + c |
+| x | Cut | ctrl + x |
+| v | Paste | ctrl + v |
+| d | Maps | win + m |
+| e | Email | win + e |
+| h | Home | ctrl + alt + h |
+| r | Recent apps | ctrl + alt + r |
+| s | Music | win + p |
+| n | notifications | ctrl + alt + n |
+| f | Screen Search | ctrl + alt + / |
+| p | Contacts | win + c |
+| y | Youtube | win + y |
+| t | Calender | win + l |
+| z | Pause/Resume Talkback | alt + ctrl + z
+
+
+//Long Press
+//Select
+//Talkback Menu
+//Next/Prev Item
+//Select config
+//Swipe up/Down
+// WIdgets
+// view options - alt + space
+
+
+
 ```
 The capital(ization) sign ⠠ marks the first letter of a word as capitalized. 
 It may occur in the middle of a word for camel case, as in the name deAngelo. 

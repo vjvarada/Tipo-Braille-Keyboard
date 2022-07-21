@@ -16,7 +16,14 @@ void isContraction() {
     Function that checks if the word stored in the buffer "typesWord" is a contraction.
     this shoulc be called when the "Standing Alone" rules of UEB of space, symbols come up
   */
-  if (typedWord.length() == 1) { //Alphabetic Wordsigns
+  if (typedWord.equalsIgnoreCase(String("en")) && prevInput == 0b101110 && inputBeforePrevInput == 0b100010 ) {
+    // when which are brailled individually should not trigger a contraction, use a conditional statement like this
+    typedWord = "";
+    inputBeforePrevInput = 0;
+    prevInput = 0;
+    return;
+  }
+  else if (typedWord.length() == 1) { //Alphabetic Wordsigns
     for (int i = 0; i < alphabeticWordsignsMapArrayLength - 1; i += 2) {
       if (typedWord.equalsIgnoreCase(String(alphabeticWordsignsMap[i]))) {
         bleKeyboard.write(KEY_BACKSPACE);
@@ -99,6 +106,8 @@ void isContraction() {
   }
 
   typedWord = "";
+  inputBeforePrevInput = 0;
+  prevInput = 0;
 }
 
 void numberIndicatorFunction() {
@@ -188,7 +197,7 @@ bool symbolFunction(byte buttonState) {
   for (int i = 0; i < symbolMapArrayLength - 2; i += 3) {
     if ((symbolMap[i] == prevInput) && (symbolMap[i + 1] == buttonState)) {
       bleKeyboard.write(char(symbolMap[i + 2]));
-      if (!(grade1LetterFlag || grade1WordFlag || grade1LockFlag)){
+      if (!(grade1LetterFlag || grade1WordFlag || grade1LockFlag)) {
         isContraction();
         typedWord = "symbol"; //so that contraction isnt entered by mistake next time, eg xx's
       }
@@ -235,8 +244,8 @@ bool grade1CharFunction(byte buttonState) {
         if (!(grade1LetterFlag || grade1WordFlag || grade1LockFlag))
           typedWord.concat(char(grade1CharMap[i + 1]));
       }
-      prevInput = 0;
-      inputBeforePrevInput = 0;
+      inputBeforePrevInput = prevInput;
+      prevInput = buttonState;
       if (grade1LetterFlag)
         grade1LetterFlag = false;
       return true;
@@ -248,7 +257,7 @@ bool grade1CharFunction(byte buttonState) {
 bool grade1PunctuationFunction(byte buttonState) {
   for (int i = 0; i < grade1PunctuationMapArrayLength - 1; i += 2) {
     if (grade1PunctuationMap[i] == buttonState) {
-      if (!(grade1LetterFlag || grade1WordFlag || grade1LockFlag)){
+      if (!(grade1LetterFlag || grade1WordFlag || grade1LockFlag)) {
         isContraction();
         typedWord = "symbol"; //so that contraction isnt entered by mistake next time, eg xx's
       }
@@ -464,74 +473,149 @@ bool lowerGroupsigns_starting_Function(byte buttonState) {
   return false;
 }
 
+void processShortcut(byte buttonState) {
+  for (int i = 0; i < grade1CharMapArrayLength - 1; i += 2) {
+    if (grade1CharMap[i] == buttonState) {
+      switch (char(grade1CharMap[i + 1])) {
+        case 'a':
+          assistant();
+          break;
+        case 'b':
+          back();
+          break;
+        case 'c':
+          copy();
+          break;
+        case 'e':
+          email();
+          break;
+        case 'p':
+          contacts();
+          break;
+        case 'm':
+          messages();
+          break;
+        case 'd':
+          maps();
+          break;
+        case 's':
+          music();
+          break;
+        case 'y':
+          youTube();
+          break;
+        case 't':
+          calender();
+          break;
+        case 'x':
+          cut();
+          break;
+        case 'v':
+          paste();
+          break;
+        case 'h':
+          home();
+          break;
+        case 'l':
+          appList_selectAll();
+          break;
+        case 'r':
+          recentApps();
+          break;
+        case 'n':
+          notifications();
+          break;
+        case 'f':
+          searchScreen();
+          break;
+        case 'z':
+          pauseResumeTalkBack();
+          break;
+
+      }
+
+    }
+  }
+}
+
+
 void processBrailleButtonState(buttonInfo brailleButton) {
 
 
-  if (brailleButton.state == INDICATOR_NUMBER) {
-    numberIndicatorFunction();
-    return;
+  if (brailleButton.holdTime > longPressTime) {
+    digitalWrite(vibrationMotor, HIGH);
+    delay(50);
+    digitalWrite(vibrationMotor, LOW);
+    processShortcut(brailleButton.state);
+    waitForBrailleButtonRelease();
   }
-  if (brailleButton.state == INDICATOR_GRADE_1) {
-    grade1IndicatorFunction();
-    symbolIndicatorFunction(brailleButton.state); //the Grade 1 symbol indicator is also a symbol for final letter groupsigns.
-    return;
-  }
-
-  if (brailleButton.state == INDICATOR_CAPITAL) {
-    capitalIndicatorFunction();
-    symbolIndicatorFunction(brailleButton.state); //the Capital indicator is also a symbol for final letter groupsigns.
-    return;
-  }
-  if ((brailleButton.state & B111000) == B000000) {
-    symbolIndicatorFunction(brailleButton.state);
-    return;
-  }
-
-  if (brailleButton.state == INDICATOR_TERMINATOR && (prevInput == INDICATOR_GRADE_1 || prevInput == INDICATOR_CAPITAL)) {
-    terminatorIndicatorFunction();
-    return;
-  }
-
-  //No indicators were pressed, check other button maps
-
-  if (symbolFlag == true) {
-    if (symbolFunction(brailleButton.state))
+  else {
+    if (brailleButton.state == INDICATOR_NUMBER) {
+      numberIndicatorFunction();
       return;
-    if (initialLetterContractionFunction(brailleButton.state))
+    }
+    if (brailleButton.state == INDICATOR_GRADE_1) {
+      grade1IndicatorFunction();
+      symbolIndicatorFunction(brailleButton.state); //the Grade 1 symbol indicator is also a symbol for final letter groupsigns.
       return;
-    if (typedWord.length() >= 1) {
-      if (finalLetterGroupsignsFunction(brailleButton.state))
+    }
+
+    if (brailleButton.state == INDICATOR_CAPITAL) {
+      capitalIndicatorFunction();
+      symbolIndicatorFunction(brailleButton.state); //the Capital indicator is also a symbol for final letter groupsigns.
+      return;
+    }
+    if ((brailleButton.state & B111000) == B000000) {
+      symbolIndicatorFunction(brailleButton.state);
+      return;
+    }
+
+    if (brailleButton.state == INDICATOR_TERMINATOR && (prevInput == INDICATOR_GRADE_1 || prevInput == INDICATOR_CAPITAL)) {
+      terminatorIndicatorFunction();
+      return;
+    }
+
+    //No indicators were pressed, check other button maps
+
+    if (symbolFlag == true) {
+      if (symbolFunction(brailleButton.state))
+        return;
+      if (initialLetterContractionFunction(brailleButton.state))
+        return;
+      if (typedWord.length() >= 1) {
+        if (finalLetterGroupsignsFunction(brailleButton.state))
+          return;
+      }
+    }
+
+    if (numberFlag == true) {
+      if (numberFunction(brailleButton.state))
         return;
     }
-  }
 
-  if (numberFlag == true) {
-    if (numberFunction(brailleButton.state))
-      return;
-  }
-
-  if (grade1CharFunction(brailleButton.state))
-    return;
-
-  if (grade1PunctuationFunction(brailleButton.state))
-    return;
-
-
-  if (!(grade1LetterFlag || grade1WordFlag || grade1LockFlag)) {
-    if (strongContractionsFunction(brailleButton.state))
+    if (grade1CharFunction(brailleButton.state))
       return;
 
-    if (strongGroupsignsFunction(brailleButton.state))
+    if (grade1PunctuationFunction(brailleButton.state))
       return;
-    if (typedWord.length() >= 1) {
-      if (lowerGroupsigns_joining_Function(brailleButton.state))
+
+
+    if (!(grade1LetterFlag || grade1WordFlag || grade1LockFlag)) {
+      if (strongContractionsFunction(brailleButton.state))
         return;
-    }
-    else
-      (lowerGroupsigns_starting_Function(brailleButton.state));
-    return;
-  }
 
+      if (strongGroupsignsFunction(brailleButton.state))
+        return;
+      if (typedWord.length() >= 1) {
+        if (lowerGroupsigns_joining_Function(brailleButton.state))
+          return;
+      }
+      else
+        (lowerGroupsigns_starting_Function(brailleButton.state));
+      return;
+    }
+
+  }
 
 
 }

@@ -164,8 +164,8 @@ char *finalLetterGroupsignsMap[] = {
 
 char *strongWordsignsMap[] = {
   "ch", "child",
-  "st", "shall",
-  "ou", "this",
+  "sh", "shall",
+  "th", "this",
   "wh", "which",
   "ou", "out",
   "st", "still",

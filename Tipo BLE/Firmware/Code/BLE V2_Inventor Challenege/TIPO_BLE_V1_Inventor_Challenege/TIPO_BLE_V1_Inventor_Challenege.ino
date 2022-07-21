@@ -1,3 +1,5 @@
+unsigned int longPressTime = 1000;
+int bounceTime = 50;
 
 #include <BleKeyboard.h> //https://github.com/T-vK/ESP32-BLE-Keyboard
 BleKeyboard  bleKeyboard(" BraillePad", "Vijay", 100);
@@ -8,6 +10,8 @@ BleKeyboard  bleKeyboard(" BraillePad", "Vijay", 100);
 #include "grade2Braille.h"
 #include "shortcuts.h"
 #include "processButtons.h"
+
+
 
 void setup() {
   for (int i = 0; i < braillePinMapArrayLength; i++)
@@ -37,18 +41,23 @@ void loop() {
       processBrailleButtonState(getbrailleButtonState());
     if (isFunctionKeyPressed())
       processFunctionButtonState(getFunctionButtonState());
-    Serial.println(typedWord);
+    // Serial.println();
+    // Serial.print("Typed Word = ");
+    // Serial.print(typedWord);
+    // Serial.print(" inputBeforePrevInput= ");
+    // Serial.print(inputBeforePrevInput,BIN);
+    // Serial.print(" prevInput= ");
+    // Serial.print(prevInput,BIN);
     delay(bounceTime);
   }
 }
 
 
 /*
-TO DO
-Shortcuts
-end contractions
-lower wordsigs ard groupsigns
-battery level vibration
-battery level to phone
-BT pair mode on/off
+  TO DO
+  Shortcuts
+  lower wordsigs and groupsigns
+  battery level vibration
+  battery level to phone
+  BT pair mode on/off
 */

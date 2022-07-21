@@ -1,7 +1,6 @@
 byte braillePinMap[] = {BTN6 , BTN5, BTN4, BTN3, BTN2, BTN1};
 byte functionPinMap[] = {CNT , UP, DWN, LFT, RGT, BTN11, BTN10, BTN9, BTN8, BTN7};
 
-int bounceTime = 50;
 bool brailleButtonHeldFlag = false;
 bool functionButtonHeldFlag = false;
 unsigned long brailleButtonpressedTime = 0;
@@ -45,6 +44,16 @@ bool isFunctionKeyPressed() {
   return false;
 }
 
+
+/*
+Function blocks code operation till braille buttons are released
+*/
+void waitForBrailleButtonRelease(){
+  while (isBrailleButtonPressed()) {
+  delay(50);
+  } 
+}
+
 /*
   Function that reads the combination of pressed buttons.Only if a button is pressed and
   subsequently released would the function return a value, as well as the time that the button(s) were held.
@@ -62,6 +71,8 @@ buttonInfo getbrailleButtonState() {
       if (digitalRead(braillePinMap[i]) == LOW)
         buttons.state = buttons.state | 1 << i;
     }
+    if  ((millis() - brailleButtonpressedTime) > longPressTime)
+      break;
   }
   if (buttons.state > 0) {
     buttons.holdTime = millis() - brailleButtonpressedTime;
