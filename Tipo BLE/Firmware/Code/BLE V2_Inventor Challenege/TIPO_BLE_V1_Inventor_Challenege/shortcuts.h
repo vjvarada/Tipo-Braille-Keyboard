@@ -121,3 +121,27 @@ void calender() {
   bleKeyboard.releaseAll();
 }
 
+void volumeUp() {
+  bleKeyboard.press(KEY_MEDIA_VOLUME_UP);
+  bleKeyboard.releaseAll();
+}
+
+void volumeDown() {
+  bleKeyboard.press(KEY_MEDIA_VOLUME_DOWN);
+  bleKeyboard.releaseAll();
+}
+
+void playPause() {
+  bleKeyboard.press(KEY_MEDIA_PLAY_PAUSE);
+  bleKeyboard.releaseAll();
+}
+
+void nextTrack() {
+  bleKeyboard.press(KEY_MEDIA_NEXT_TRACK);
+  bleKeyboard.releaseAll();
+}
+
+void previousTrack() {
+  bleKeyboard.press(KEY_MEDIA_PREVIOUS_TRACK);
+  bleKeyboard.releaseAll();
+}

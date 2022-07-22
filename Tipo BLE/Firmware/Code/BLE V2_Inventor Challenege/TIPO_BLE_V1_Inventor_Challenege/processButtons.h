@@ -479,63 +479,82 @@ void processShortcut(byte buttonState) {
       switch (char(grade1CharMap[i + 1])) {
         case 'a':
           assistant();
-          break;
+          return;
         case 'b':
           back();
-          break;
+          return;
         case 'c':
           copy();
-          break;
+          return;
         case 'e':
           email();
-          break;
+          return;
         case 'p':
           contacts();
-          break;
+          return;
         case 'm':
           messages();
-          break;
+          return;
         case 'd':
           maps();
-          break;
+          return;
         case 's':
           music();
-          break;
+          return;
         case 'y':
           youTube();
-          break;
+          return;
         case 't':
           calender();
-          break;
+          return;
         case 'x':
           cut();
-          break;
+          return;
         case 'v':
           paste();
-          break;
+          return;
         case 'h':
           home();
-          break;
+          return;
         case 'l':
           appList_selectAll();
-          break;
+          return;
         case 'r':
           recentApps();
-          break;
+          return;
         case 'n':
           notifications();
-          break;
+          return;
         case 'f':
           searchScreen();
-          break;
+          return;
         case 'z':
           pauseResumeTalkBack();
-          break;
-
+          return;
+      //   case 'g':
+      //     playPause();
+      //     return;
       }
-
     }
   }
+  // for (int i = 0; i < grade1PunctuationMapArrayLength - 1; i += 2) {
+  //   if (grade1PunctuationMap[i] == buttonState) {
+  //     switch (char(grade1PunctuationMap[i + 1])) {
+  //       case '.':
+  //         volumeUp();
+  //         return;
+  //       case '!':
+  //         volumeDown();
+  //         return;
+  //       case '?':
+  //         previousTrack();
+  //         return;
+  //       case '"':
+  //         nextTrack();
+  //         return;
+  //     }
+  //   }
+  // }
 }
 
 

@@ -40,6 +40,79 @@ BLE HID implementation using ESP32
 # Implementation:
 How the HID Keypad is implemented for use with Braille
 
+## Alphabetic Shortcuts
+
+| CHARACTER   |      Shortcut      |  Key Combo |
+|----------|:-------------:|------:|
+| a | Assistant | win |
+| b | Back | alt + backspace |
+| l | Apps List / Select All | Ctrl + a |
+| c | Copy | ctrl + c |
+| x | Cut | ctrl + x |
+| v | Paste | ctrl + v |
+| d | Maps | win + m |
+| e | Email | win + e |
+| h | Home | ctrl + alt + h |
+| r | Recent apps | ctrl + alt + r |
+| s | Music | win + p |
+| m | Messages | win + s |
+| n | notifications | ctrl + alt + n |
+| f | Screen Search | ctrl + alt + / |
+| p | Contacts | win + c |
+| y | Youtube | win + y |
+| t | Calender | win + l |
+| z | Pause/Resume Talkback | alt + ctrl + z
+
+
+## Item Navigation controls
+
+|      Key Combo      |  Equivalent Action | Action |
+|----------|:-------------:|------:|
+| Alt + Left | Swipe Left | Navigate to the next item|
+| Alt + Right | Swipe Right | Navigate to the previous item |
+| Alt + Up | - | Navigate to the item above |
+| Alt + Down | - | Navigate to the item below|
+| Alt + Ctrl + Left | - | Navigate to First Item |
+| Alt + Ctrl + Right | - | Navigate to Last Item |
+| Alt + Ctrl + Down | -  | Navigate to Next Window |
+| Alt + Ctrl + Up | - | Navigate to Previous Window |
+| Alt + Enter | Tap | Select an item |
+| Alt + Shift + Enter | - |Long press | 
+
+
+
+## Reading controls
+
+|      Key Combo      |  Equivalent Action | Action |
+|----------|:-------------:|------:|
+| Alt  + Shift + Right | - | Navigate to Next Character |
+| Alt  + Shift + Left | - | Navigate to Previous Character |
+| Alt + Ctrl + Shift + Right | - | Navigate to Next Word |
+| Alt + Ctrl + Shift + Left | - | Navigate to Previous Word |
+
+## Continuous Reading controls
+
+|      Key Combo      |  Equivalent Action | Action |
+|----------|:-------------:|------:|
+| Alt + Ctrl + Enter | - | Continuous read from top |
+| Alt + Ctrl + Shift + Enter | - | Continuous read from Next Item |
+| Alt + Right | Swipe Right | Fast-forwards the text.|
+| Alt + Left | Swipe Left | Rewinds the text. |
+
+
+
+// Magnification Settigns
+//Talkback Menu
+//Select config
+//Swipe up/Down
+// WIdgets
+// view options - alt + space
+
+- clear BT communication
+- BT pair button
+
+
+
 ## Grade 1 Braille
 The Braille Alphabet—Internationally Standardised
 The letters a-z are common and standard for most braille country tables.
@@ -170,37 +243,7 @@ using Grade 1 indicator/Letter sign (⠰) to specify end of number
 | capital terminator indicator |       ⠠⠄      | 6 3|
 
 
-## Shortcuts
 
-| CHARACTER   |      Shortcut      |  Key Combo |
-|----------|:-------------:|------:|
-| a | Assistant | win |
-| b | Back | alt + backspace |
-| l | Apps List / Select All | Ctrl + a |
-| c | Copy | ctrl + c |
-| x | Cut | ctrl + x |
-| v | Paste | ctrl + v |
-| d | Maps | win + m |
-| e | Email | win + e |
-| h | Home | ctrl + alt + h |
-| r | Recent apps | ctrl + alt + r |
-| s | Music | win + p |
-| n | notifications | ctrl + alt + n |
-| f | Screen Search | ctrl + alt + / |
-| p | Contacts | win + c |
-| y | Youtube | win + y |
-| t | Calender | win + l |
-| z | Pause/Resume Talkback | alt + ctrl + z
-
-
-//Long Press
-//Select
-//Talkback Menu
-//Next/Prev Item
-//Select config
-//Swipe up/Down
-// WIdgets
-// view options - alt + space
 
 
 
@@ -381,28 +424,19 @@ isStandingAlone?
 
 | CHARACTER   |      BRAILLE      |  BRAILLE DOT/BUTTON # |
 |----------|:-------------:|------:|
-|ound| | 46 145
-|ance| | 46 15
-|sion| | 46 1345
-|less| | 46 234
-|ount| | 46 2345
-|ence| | 56 15
-|ong| | 56 1245
-|ful| | 56 123
-|tion| | 56 1345
-|ness| | 56 234
-|ment| | 56 2345
-|ity| | 56 13456
+|ound| | 46 145 |
+|ance| | 46 15 |
+|sion| | 46 1345 |
+|less| | 46 234|
+|ount| | 46 2345|
+|ence| | 56 15|
+|ong| | 56 1245|
+|ful| | 56 123|
+|tion| | 56 1345|
+|ness| | 56 234|
+|ment| | 56 2345|
+|ity| | 56 13456|
 
-
-
-
-
-##### TBD:
-- Initial Letter Contractions
-- Final Letter Contractions
-- Shortform words
-- Navigation
 
 
 
@@ -417,5 +451,3 @@ isStandingAlone?
 7. Keyboard Shortcuts https://www.cnet.com/culture/keyboard-shortcuts-for-android-phones/
 8. Talkback Shortcuts https://dequeuniversity.com/screenreaders/talkback-shortcuts
 9. Braille to Binary encoder https://www.dcode.fr/braille-alphabet
-
-hello o 
