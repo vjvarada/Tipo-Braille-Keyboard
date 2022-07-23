@@ -40,79 +40,6 @@ BLE HID implementation using ESP32
 # Implementation:
 How the HID Keypad is implemented for use with Braille
 
-## Alphabetic Shortcuts
-
-| CHARACTER   |      Shortcut      |  Key Combo |
-|----------|:-------------:|------:|
-| a | Assistant | win |
-| b | Back | alt + backspace |
-| l | Apps List / Select All | Ctrl + a |
-| c | Copy | ctrl + c |
-| x | Cut | ctrl + x |
-| v | Paste | ctrl + v |
-| d | Maps | win + m |
-| e | Email | win + e |
-| h | Home | ctrl + alt + h |
-| r | Recent apps | ctrl + alt + r |
-| s | Music | win + p |
-| m | Messages | win + s |
-| n | notifications | ctrl + alt + n |
-| f | Screen Search | ctrl + alt + / |
-| p | Contacts | win + c |
-| y | Youtube | win + y |
-| t | Calender | win + l |
-| z | Pause/Resume Talkback | alt + ctrl + z
-
-
-## Item Navigation controls
-
-|      Key Combo      |  Equivalent Action | Action |
-|----------|:-------------:|------:|
-| Alt + Left | Swipe Left | Navigate to the next item|
-| Alt + Right | Swipe Right | Navigate to the previous item |
-| Alt + Up | - | Navigate to the item above |
-| Alt + Down | - | Navigate to the item below|
-| Alt + Ctrl + Left | - | Navigate to First Item |
-| Alt + Ctrl + Right | - | Navigate to Last Item |
-| Alt + Ctrl + Down | -  | Navigate to Next Window |
-| Alt + Ctrl + Up | - | Navigate to Previous Window |
-| Alt + Enter | Tap | Select an item |
-| Alt + Shift + Enter | - |Long press | 
-
-
-
-## Reading controls
-
-|      Key Combo      |  Equivalent Action | Action |
-|----------|:-------------:|------:|
-| Alt  + Shift + Right | - | Navigate to Next Character |
-| Alt  + Shift + Left | - | Navigate to Previous Character |
-| Alt + Ctrl + Shift + Right | - | Navigate to Next Word |
-| Alt + Ctrl + Shift + Left | - | Navigate to Previous Word |
-
-## Continuous Reading controls
-
-|      Key Combo      |  Equivalent Action | Action |
-|----------|:-------------:|------:|
-| Alt + Ctrl + Enter | - | Continuous read from top |
-| Alt + Ctrl + Shift + Enter | - | Continuous read from Next Item |
-| Alt + Right | Swipe Right | Fast-forwards the text.|
-| Alt + Left | Swipe Left | Rewinds the text. |
-
-
-
-// Magnification Settigns
-//Talkback Menu
-//Select config
-//Swipe up/Down
-// WIdgets
-// view options - alt + space
-
-- clear BT communication
-- BT pair button
-
-
-
 ## Grade 1 Braille
 The Braille Alphabet—Internationally Standardised
 The letters a-z are common and standard for most braille country tables.
@@ -438,6 +365,98 @@ isStandingAlone?
 |ity| | 56 13456|
 
 
+## Talkback Basics
+
+|Key Combo      |   Action | 
+|:----------|------:|
+| Hold z | Pause/Resume Talkback | 
+| Alt + Space | Open Talkback Menu | 
+
+## Item Navigation controls
+
+|Key Combo      |   Action | 
+|:----------|------:|
+| Alt + Left  | Navigate to the next item|
+| Alt + Right  | Navigate to the previous item |
+| Alt + Up | Navigate to the item above |
+| Alt + Down | Navigate to the item below|
+|_________|________|
+| Alt + Ctrl + Left | Navigate to First Item |
+| Alt + Ctrl + Right | Navigate to Last Item |
+| Alt + Ctrl + Down  | Navigate to Next Window |
+| Alt + Ctrl + Up | Navigate to Previous Window |
+|_________|________|
+| Alt + Enter | Select an item |
+| Alt + Shift + Enter |Long press | 
+
+## Text Editing  
+|Key Combo      |   Action | 
+|:----------|------:|
+| Right | Move cursor right |
+| Left | Move cursor left |
+| Up | Move cursor to line above |
+| Down | Move cursor to line below |
+| Ctrl + Right | Move cursor to Previous Word |
+| Ctrl + Left | Move Cursor to Next Word |
+| Shift + Right | Select next character |
+| Shift + Left | Select Previous Character |
+| Shift + Up | Select Line Above |
+| Shift + Down | Select Line Below |
+| Shift + Ctrl + Left | Select Previous Word |
+| Shift + Ctrl + Right | Select Next Word |
+
+
+## Reading controls
+
+|Key Combo      |   Action | 
+|:----------|------:|
+| Alt + Shift + Control + Up/Down | Cycle Reading Controls | 
+| Alt + Shift + Up/Down | Go to Next/Prev as per reading Controls |
+| Alt + Shift + Right  | Navigate to Next Character |
+| Alt  + Shift + Left |  Navigate to Previous Character |
+| Alt + Ctrl + Shift + Right | Navigate to Next Word |
+| Alt + Ctrl + Shift + Left |  Navigate to Previous Word |
+
+## Continuous Reading controls
+
+|Key Combo      |   Action | 
+|:----------|------:|
+| Alt + Ctrl + Enter | Continuous read from top |
+| Alt + Ctrl + Shift + Enter | Continuous read from Next Item |
+| Alt + Right  | Fast-forwards the text.|
+| Alt + Left | Rewinds the text. |
+| Enter | Stop Continuous Reading |
+
+## Slider Controls  
+
+|Key Combo      |   Action | 
+|:----------|------:|
+| Alt + Shift + Up | Increase Slider Value|
+| Alt + Shift + Down  | Decrease Slider Value |
+
+## Alphabetic Shortcuts
+
+Long press braille character to activate
+
+| CHARACTER   |      Shortcut      |  Key Combo |
+|----------|:-------------:|------:|
+| a | Assistant | win |
+| b | Back | alt + backspace |
+| l | Apps List / Select All | Ctrl + a |
+| c | Copy | ctrl + c |
+| x | Cut | ctrl + x |
+| v | Paste | ctrl + v |
+| d | Maps | win + m |
+| e | Email | win + e |
+| h | Home | ctrl + alt + h |
+| r | Recent apps | ctrl + alt + r |
+| s | Music | win + p |
+| m | Messages | win + s |
+| n | notifications | ctrl + alt + n |
+| f | Screen Search | ctrl + alt + / |
+| p | Contacts | win + c |
+| y | Youtube | win + y |
+| t | Calender | win + l |
 
 
 #### References:

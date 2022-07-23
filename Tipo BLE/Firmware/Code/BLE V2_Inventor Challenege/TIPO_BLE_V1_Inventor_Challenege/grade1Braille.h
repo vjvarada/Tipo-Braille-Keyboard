@@ -97,9 +97,9 @@ byte symbolMap[] = {
 
 #define BACKSPACE 0b100000000
 #define SPACE     0b1000000000
-#define CONTROL   0b100000
+#define CONTROL   0b10000000
 #define SHIFT     0b1000000
-#define ALT       0b10000000
+#define ALT       0b100000
 #define UP        0b10
 #define DOWN      0b100
 #define LEFT      0b10000
