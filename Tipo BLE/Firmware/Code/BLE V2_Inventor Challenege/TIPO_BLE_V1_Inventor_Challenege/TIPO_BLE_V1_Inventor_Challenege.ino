@@ -26,7 +26,7 @@ void setup() {
   pinMode(statusLED, OUTPUT);
   digitalWrite(statusLED, HIGH);
   digitalWrite(vibrationMotor, HIGH);
-  delay(50);
+  delay(100);
   digitalWrite(vibrationMotor, LOW);
   digitalWrite(statusLED, LOW);
 

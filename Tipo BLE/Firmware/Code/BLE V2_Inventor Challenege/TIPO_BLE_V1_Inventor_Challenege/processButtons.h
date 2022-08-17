@@ -670,24 +670,34 @@ void processFunctionButtonState(buttonInfo button) {
 
   else
     bleKeyboard.release(KEY_BACKSPACE);
-  if ((button.state & UP) == UP)
+  if ((button.state & UP) == UP){
+    typedWord = "";
     bleKeyboard.press(KEY_UP_ARROW);
+  }
   else
     bleKeyboard.release(KEY_UP_ARROW);
-  if ((button.state & DOWN) == DOWN)
+  if ((button.state & DOWN) == DOWN){
+    typedWord = "";
     bleKeyboard.press(KEY_DOWN_ARROW);
+  }
   else
     bleKeyboard.release(KEY_PAGE_DOWN);
-  if ((button.state & LEFT) == LEFT)
+  if ((button.state & LEFT) == LEFT){
+    typedWord = "";
     bleKeyboard.press(KEY_LEFT_ARROW);
+  }
   else
     bleKeyboard.release(KEY_LEFT_ARROW);
-  if ((button.state & RIGHT) == RIGHT)
+  if ((button.state & RIGHT) == RIGHT){
+    typedWord = "";
     bleKeyboard.press(KEY_RIGHT_ARROW);
+  }
   else
     bleKeyboard.release(KEY_RIGHT_ARROW);
-  if ((button.state & CONTROL) == CONTROL)
+  if ((button.state & CONTROL) == CONTROL){
+    typedWord = "";
     bleKeyboard.press(KEY_LEFT_CTRL);
+  }
   else
     bleKeyboard.release(KEY_LEFT_CTRL);
   if ((button.state & SHIFT) == SHIFT)

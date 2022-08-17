@@ -1,40 +1,26 @@
-# TIPO
-Plug n Play Braille Keyboard for your smartphone
-Shows up as a HID device, and behaves just like a Keyboard would.
 
-## TIPO V1
-USB HID only implementation using atmega32u4/Adruni Leonardo
+# What is a Braille KeyPad?
 
-## TIPO BLE
+- Braille KeyPad is a Bluetooth keyboard with a special layout that allows visually impaired individuals to easily navigate and type into SmartPhones and tablets. 
+- There are 6 circular Braille input buttons on KeyPad arranged in a braille layout. By pressing combinations of the braille input buttons you can input text and symbols. Braille text input is compliant to UEB Grade 1 and Grade 2 braille except non-ASCII characters and some lower groupsigns & wordsigns.
 
-BLE HID implementation using ESP32
 
-------------------------------------------------------------------
-# Hardware Connections
 
-## Architecture
-![Hardware Architecture](https://github.com/vjvarada/Tipo-Braille-Keyboard/blob/master/Reference/Tipo%20V2%20Hardware%20Architeture.drawio.png?raw=true)
+# Physical Leyout:
 
-## Button Map:
+- The braille keypads is a rectangular slab with rounded edges. It has all the buttons on one side, and is flat on the other.
+- There is a slot for lanyard/wrist straps on one side of the rectangle. 
+- Braille KeyPad consists of 6 circular "Braille" keys, 5 square "Special Keys" and a 5-Way Navigation stick with Center click.
+- The 6 circular braille keys are used to input text and symbols by brailling in UEB grade 1 and grade 2 braille, in addition to long pressing the braille buttons of certain alphabets to trigger shortcuts on the SmartPhone/Tablet
+- The 5 square keys are Alt, Ctrl, Shift, Space & Delete keys.
+- The Navigation stick controls up, Down, Left, and Right.
+- Clicking the center of the navigation stick represents enter/newline
+- The bottom os the device has the ON/OFF slider and the USB Charging input.
 
-| Button | ESP32 Pin # |
-| :------: | :-----------:|
-| BTN1 | 25|
-| BTN2 | 26|
-| BTN3 | 27|
-| BTN4 | 13|
-| BTN5 | 15|
-| BTN6 | 2 |
-| BTN7 | 19|
-| BTN8 | 18|
-| BTN9 | 17|
-| BTN10| 16|
-| BTN11| 4 |
-| CNT | 33|
-| UP | 34 |
-| DWN | 35|
-| LFT | 36|
-| RGT | 39|
+
+# How to use
+- Braille KeyPad is held between your palms, with the buttons facing away, and the flat side towards you. 
+
 
 
 # Implementation:
@@ -470,3 +456,43 @@ Long press braille character to activate
 7. Keyboard Shortcuts https://www.cnet.com/culture/keyboard-shortcuts-for-android-phones/
 8. Talkback Shortcuts https://dequeuniversity.com/screenreaders/talkback-shortcuts
 9. Braille to Binary encoder https://www.dcode.fr/braille-alphabet
+
+
+# TIPO
+Plug n Play Braille Keyboard for your smartphone
+Shows up as a HID device, and behaves just like a Keyboard would.
+
+## TIPO V1
+USB HID only implementation using atmega32u4/Adruni Leonardo
+
+## TIPO BLE
+
+BLE HID implementation using ESP32
+
+------------------------------------------------------------------
+# Hardware Connections
+
+## Architecture
+![Hardware Architecture](https://github.com/vjvarada/Tipo-Braille-Keyboard/blob/master/Reference/Tipo%20V2%20Hardware%20Architeture.drawio.png?raw=true)
+
+## Button Map:
+
+| Button | ESP32 Pin # |
+| :------: | :-----------:|
+| BTN1 | 25|
+| BTN2 | 26|
+| BTN3 | 27|
+| BTN4 | 13|
+| BTN5 | 15|
+| BTN6 | 2 |
+| BTN7 | 19|
+| BTN8 | 18|
+| BTN9 | 17|
+| BTN10| 16|
+| BTN11| 4 |
+| CNT | 33|
+| UP | 34 |
+| DWN | 35|
+| LFT | 36|
+| RGT | 39|
+
