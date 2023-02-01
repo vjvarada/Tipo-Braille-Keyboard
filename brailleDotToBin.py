@@ -1,3 +1,4 @@
+
 while True:
     brailleKeys =0
     print("Enter Braille Dot Numbers")
