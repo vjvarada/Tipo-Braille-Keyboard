@@ -1,5 +1,5 @@
 
-# What is a Braille KeyPad?
+# What is a Braille KeyPad ?
 
 - Braille KeyPad is a Bluetooth keyboard with a special layout that allows visually impaired individuals to easily navigate and type into SmartPhones and tablets. 
 - There are 6 circular Braille input buttons on KeyPad arranged in a braille layout. By pressing combinations of the braille input buttons you can input text and symbols. Braille text input is compliant to UEB Grade 1 and Grade 2 braille except non-ASCII characters and some lower groupsigns & wordsigns.
